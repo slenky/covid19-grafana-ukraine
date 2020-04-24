@@ -1,0 +1,39 @@
+apiVersion: 1
+
+datasources:
+  - name: "JSON - ChrisMichael"
+    type: simpod-json-datasource
+    withCredentials: false
+    access: proxy
+    orgId: 1
+    password:
+    user:
+    database:
+    basicAuth: false
+    whitelistedCookies:
+    withCredentials:
+    isDefault: true
+    jsonData:
+      tlsAuth: false
+      tlsAuthWithCACert: false
+    version: 1
+    editable: true
+    url: https://covid19-grafana-chrismichael.herokuapp.com
+  - name: "JSON - pomber / twei55 API"
+    type: simpod-json-datasource
+    withCredentials: false
+    access: proxy
+    orgId: 1
+    password:
+    user:
+    database:
+    basicAuth: false
+    whitelistedCookies:
+    withCredentials:
+    isDefault: false
+    jsonData:
+      tlsAuth: false
+      tlsAuthWithCACert: false
+    version: 1
+    editable: true
+    url: https://covid19-grafana.herokuapp.com
